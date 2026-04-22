@@ -7,7 +7,9 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import LoginModal from './components/LoginModal';
-import ResetPasswordPage from './pages/ResetPasswordPage'; // ✅ Added
+import ResetPasswordPage from './pages/ResetPasswordPage';
+import ConsultationPage from './pages/ConsultationPage'; // ✅ Added
+import VideoCallPage from './pages/VideoCallPage';       // ✅ Added
 
 function HomePage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -46,7 +48,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/reset-password" element={<ResetPasswordPage />} /> {/* ✅ Added */}
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/consultations" element={<ConsultationPage />} />       {/* ✅ Added */}
+        <Route path="/consultation/:id" element={<VideoCallPage />} />       {/* ✅ Added */}
       </Routes>
     </BrowserRouter>
   );
