@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, Star, Clock, ChevronDown, Video } from 'lucide-react';
+import { Search, Star, Clock, Video } from 'lucide-react';
 import API from '../api/axios';
 
 interface Doctor {
